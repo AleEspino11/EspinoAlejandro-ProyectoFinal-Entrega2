@@ -16,9 +16,46 @@
     <!-- Header-->
 
    <header class="cabecera">
-    
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid cabecera__ul__li">
+            <a class="navbar-brand cabecera__ul__li__a--myanime" href="./index.html">MY ANIME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 cabecera__ul">
+                <li class="nav-item cabecera__ul__li">
+                    <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+            
+                <li class="nav-item cabecera__ul__li">
+                    <a class="nav-link text-white" href="page/en-emision.html">En Emision</a>
+                </li>
+
+                <li class="nav-item cabecera__ul__li">
+                    <a class="nav-link text-white" href="page/completos.html">Completos</a>
+                </li>
+
+                <li class="nav-item cabecera__ul__li">
+                    <a class="nav-link text-white" href="page/peliculas.html">Peliculas</a>
+                </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+
+
+
+
           <!--Menu Principal-->
-        <nav>
+
+         <!-- <nav>
 
             <ul class="cabecera__ul">
             
@@ -31,7 +68,7 @@
                 
             </ul>
 
-        </nav>
+        </nav>  -->
 
     </header>
     
@@ -147,25 +184,27 @@
 
 
 <!-- Footer-->
-<div class="section-footer">
-    <footer class="footer">
+    <div class="section-footer">
+        <footer class="footer">
 
-        <h2 class="visitanos">Visitanos en nuestras redes</h2>
+            <h2 class="visitanos">Visitanos en nuestras redes</h2>
 
-        <nav>
-            <ul>
+            <nav class="footer__nav">
+                <ul>
+                
+                    <li class="footer-li"><a href="https://www.facebook.com/" target="_blank"><img src="../multimedia/F.png" alt="" class="visitanos__img"></a></li>
+    
+                    <li class="footer-li"><a href="https://www.instagram.com/" target="_blank"><img src="../multimedia/I.png" alt="" class="visitanos__img"></a></li>
+    
+                    <li class="footer-li"><a href="https://www.youtube.com/" target="_blank"> <img src="../multimedia/Y.png" alt="" class="visitanos__img"></a></li>
+                </ul>
+    
+            </nav>
+
             
-                <li class="footer-li"><a href="https://www.facebook.com/" target="_blank"><img src="./multimedia/F.png" alt="" class="visitanos__img"></a></li>
+        </footer>
+    </div>
 
-                <li class="footer-li"><a href="https://www.instagram.com/" target="_blank"><img src="./multimedia/I.png" alt="" class="visitanos__img"></a></li>
-
-                <li class="footer-li"><a href="https://www.youtube.com/" target="_blank"> <img src="./multimedia/Y.png" alt="" class="visitanos__img"></a></li>
-            </ul>
-
-        </nav>
-
-    </footer>
-</div>
 <!-- Fin Footer-->
 
 <!--  Conexion JS servidor bootstrap -->

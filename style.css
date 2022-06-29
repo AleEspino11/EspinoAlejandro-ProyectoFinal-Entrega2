@@ -15,18 +15,35 @@
     justify-content: center;
     border: solid 3px rgba(34, 34, 34, 0.952);
     background-color: rgb(27, 27, 27);
-    height: 60px;
-    width: 100%;
+    height: 7vh;
+    max-width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
+nav {
+display: flex;
+justify-content: space-between;
+max-width: 100%;
+height: auto;
+z-index: 1;
+}
+
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+/*.form-control.me-2 {
+ width: auto;
+}*/
+
 .cabecera__ul {
 display: flex;
 justify-content: space-around;
-margin: 0;
-padding: 0;
+align-items: center;
+
 
 }
 
@@ -35,13 +52,16 @@ padding: 0;
     font-family: 'Orbitron', sans-serif;
     list-style: none;
     font-weight: 550;
+    color: rgb(231, 228, 228);
+    margin-left: 6vw;
 }
+
 
 .cabecera__ul__li__a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    /*margin-left: 200px;*/
+    margin-left: 200px;
     color: rgb(14, 14, 14);
     color: rgb(231, 228, 228);
     /*border: outset 2px rgb(1, 77, 100);*/
@@ -56,8 +76,8 @@ padding: 0;
     background: linear-gradient(120deg,#EDDE5D,#7ad147,#2ecc71, #3498db, #c64bd6,#f58c2a, #EDDE5D);
     background-size: 400%;
     font-weight: 800;
-    letter-spacing: 5px;
-    word-spacing: 5px;
+    letter-spacing: 4px;
+    word-spacing: 4px;
     -webkit-text-fill-color: transparent ;
     -webkit-background-clip: text;  background-clip: text;
     animation: animate 15s linear infinite;
@@ -248,16 +268,23 @@ padding: 0;
 
 /*footer*/
 
+.section-footer {
+    display: flex;
+    justify-content: center;
+}
 
 .footer {
-max-width: 80%;
+width: 80%;
 height: auto;
 border: inset 2px rgba(255, 115, 0, 0.952);
 /*background-color: rgb(1, 28, 36);*/
 background-image: url(./multimedia/FondosSections/FONDO-GRIS.jpg);
-height: auto;
-margin: 3vw 8vw 3vw 7.5vw;
+margin: 3vw 0 3vw 0;
 padding: 20px;
+}
+
+.footer__nav ul  {
+    list-style-type: none;
 }
 
 .visitanos {
@@ -267,15 +294,14 @@ padding: 20px;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     margin-bottom: 10px;
-}
-
-.footer ul li {
     list-style-type: none;
 }
+
 .visitanos__img {
-    margin-left: 1% ;
-    height: 1.875em;
-    padding: 1%;
+    width: 40px;
+    height: auto;
+    margin: 10px;
+
 }
 
 /* fin footer*/
@@ -532,9 +558,18 @@ border-radius: 15px;
 
 /*Transiciones-Animaciones-Transformaciones*/
 
-.cabecera__ul__li:hover {
+
+
+.navbar-brand:hover { 
+    transform: scale(1.1);
+}
+.nav-link:hover {
     transform: scale(1.2);
 }
+
+/*.cabecera__ul__li:hover {
+    transform: scale(1.2);
+}*/
 
 @keyframes animate {
 
@@ -569,7 +604,7 @@ border-radius: 15px;
 }
     
 .visitanos:hover {
-    transform: scale(1.02);
+    transform: scale(1.0);
 }
 
 .destacados__novedades__h2:hover {
@@ -610,7 +645,15 @@ body {
 .cabecera {
     padding: 10px;
     max-width: 100%;
+    height: auto;
    }
+
+   nav {
+    
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    }
 
 .cabecera__ul__li {
     font-size: 2vw;
