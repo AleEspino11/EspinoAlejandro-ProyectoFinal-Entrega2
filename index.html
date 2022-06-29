@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>My anime</title>
+            <!--  Conexion servidor bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      </head>
 
-
-
-    <title>My anime</title>
-</head>
-
-<body class="body">
-
-
+      <body class="body">
+     
     <!-- Header-->
 
    <header class="cabecera">
@@ -50,11 +46,37 @@
 
     <!-- Carrousel-->
     
-                <img src="multimedia/Head.jpeg" alt="Atack on titan, estrenos" class="atack">      
+          
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 45%;">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./multimedia/Head.jpeg" class="d-block w-100 atack" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/98662d1c546c4e74de58fbc52679ac6c.jpeg" class="d-block w-100 atack" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/514dc96ef8f7eaac948d6df35ecba0ba.jpeg" class="d-block w-100 atack" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
         
     <!-- Fin Carrousel-->
 
         </section>
+
+        
+
 
 
     
@@ -145,6 +167,9 @@
     </footer>
 </div>
 <!-- Fin Footer-->
-    
+
+<!--  Conexion JS servidor bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   
 </body>
 </html>

@@ -3,28 +3,30 @@
     margin: 0%;
  }
 
-body {
+.body {
     background-color: rgb(27, 27, 27);
 
 }
 
 /*Header*/
-
 .cabecera {
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: solid 3px rgba(34, 34, 34, 0.952);
     background-color: rgb(27, 27, 27);
-    height: 50px;
+    height: 60px;
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .cabecera__ul {
 display: flex;
 justify-content: space-around;
+margin: 0;
+padding: 0;
 
 }
 
@@ -87,9 +89,10 @@ justify-content: space-around;
     height: 65vh;
  }
 
+
 .atack {
-    height: 480px;
-    width: 880px;
+    height: auto;
+    width: auto;
 }
 
 
